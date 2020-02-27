@@ -138,9 +138,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bitmap.hpp" />
     <ClInclude Include="BitmapFileHeader.hpp" />
     <ClInclude Include="BitmapInfoHeader.hpp" />
   </ItemGroup>
