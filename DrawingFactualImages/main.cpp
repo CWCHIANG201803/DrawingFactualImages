@@ -1,4 +1,5 @@
 #include <iostream>
+#include "BitmapFileHeader.hpp"  
 using namespace std;
 
 
