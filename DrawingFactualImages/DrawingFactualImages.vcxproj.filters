@@ -23,5 +23,8 @@
     <ClInclude Include="BitmapFileHeader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BitmapInfoHeader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
