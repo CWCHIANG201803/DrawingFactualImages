@@ -10,11 +10,21 @@ int main(int argc, char* argv[])
 
 	Bitmap bitmap(WIDTH, HEIGHT);
 
+	double min = 999999;
+	double max = -999999;
+
 	for (int y = 0; y < HEIGHT; y++) {
 		for (int x = 0; x < WIDTH; x++) {
-			bitmap.setPixel(x, y, 255, 0, 0);
+			double xFractal = (x - WIDTH/2) * 2.0/WIDTH;
+			double yFractal = (y - HEIGHT/2) * 2.0/HEIGHT;
+			
+			if (xFractal < min) min = xFractal;
+			if (xFractal > max) max = xFractal;
+
 		}
 	}
+
+	cout << min << ", " << max << endl;
 
 	bitmap.setPixel(WIDTH/2, HEIGHT/2,255,255,255);
 	  
